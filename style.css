@@ -5,15 +5,15 @@
 
 .channel-list {
     height: 70%; 
-    background: red;
+    background:url('./assets/grey\ texture.png');
 }
 
 .footer {
     height: 30%;
-    background: blue;
 }
 
 body {
-    width: 1980px;
-    height: 1080px;
+    width: 100vw;
+    height: 100vh;
+    background: #cdd0d7 
 }
