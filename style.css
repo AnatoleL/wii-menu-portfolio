@@ -1,0 +1,19 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.channel-list {
+    height: 70%; 
+    background: red;
+}
+
+.footer {
+    height: 30%;
+    background: blue;
+}
+
+body {
+    width: 1980px;
+    height: 1080px;
+}
