@@ -1,10 +1,11 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
-.channel-list {
-    height: 70%; 
+.channel-pannel {
+    height: 782px; 
     background:url('./assets/grey\ texture.png');
     border-bottom: 10px #34beed solid;
     box-shadow: 0px 0px 160px rgba(95, 93, 93, 0.986) ;
@@ -14,8 +15,24 @@
     height: 30%;
 }
 
-body {
-    width: 100vw;
-    height: 100vh;
-    background: #cdd0d7 
+.channel {
+    border: 4px #B4B4B4 solid;
+    width: 387px;
+    height: 213px;
+    display: inline-block;
+    margin: 5px 7px;
+}
+
+.channel-table {
+    position: relative;
+    top: 75px;
+    left: 160px;
+    width: 1620px;
+}
+
+.screen-box {
+    width: 1920px;
+    height: 1080px;
+    overflow: hidden;
+    border: 1px solid black;
 }
