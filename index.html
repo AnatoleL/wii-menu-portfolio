@@ -5,45 +5,77 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <title>Wii Menu Portfolio</title>
+    <script>
+        function startTime() {
+          var today = new Date();
+          var h = today.getHours();
+          var m = today.getMinutes();
+          m = checkTime(m);
+          document.getElementById('clock').innerHTML =
+          h + ":" + m;
+          var t = setTimeout(startTime, 500);
+        }
+        function checkTime(i) {
+          if (i < 10) {i = "0" + i};  // add zero in front of numbers < 10
+          return i;
+        }
+        </script>
 </head>
-<body>
+<body onload="startTime()">
     <div class="screen-box">
         <div class="channel-pannel">
             <div class="channel-table">
                 <div>
                     <div class="channel">
-                        <img class="channel-picture" src="assets/miichannel.jpg">
+                        <img class="channel-picture" src="assets/bosch.png">
                     </div>
-                    <div class="channel"></div>
-                    <div class="channel"></div>
-                    <div class="channel"></div>
+                    <img class="channel" src="assets/linkedin.png">
+                    <img class="channel" src="assets/youtube.png">
+                    <img class="channel" src="assets/allotuteur.png">
                 </div>
                 <div>
-                    <div class="channel"></div>
-                    <div class="channel"></div>
-                    <div class="channel"></div>
-                    <div class="channel"></div>
+                    <img class="channel" src="assets/mini-jam.png">
+                    <img class="channel" src="assets/namene.png">
+                    <div class="channel">
+                        <div class="channel-blur"></div>
+                        <img class="channel-picture" src="assets/empty-channel.png">
+                    </div>
+                    <div class="channel">
+                        <div class="channel-blur-sooner"></div>
+                        <img class="channel-picture" src="assets/empty-channel.png">
+                    </div>
                 </div>
                 <div>
-                    <div class="channel"></div>
-                    <div class="channel"></div>
-                    <div class="channel"></div>
-                    <div class="channel"></div>
+                    <div class="channel">
+                        <div class="channel-blur-sooner"></div>
+                        <img class="channel-picture" src="assets/empty-channel.png">
+                    </div>
+                    <div class="channel">
+                        <div class="channel-blur"></div>
+                        <img class="channel-picture" src="assets/empty-channel.png">
+                    </div>
+                    <div class="channel">
+                        <div class="channel-blur-sooner"></div>
+                        <img class="channel-picture" src="assets/empty-channel.png">
+                    </div>
+                    <div class="channel">
+                        <div class="channel-blur-later"></div>
+                        <img class="channel-picture" src="assets/empty-channel.png">
+                    </div>
                 </div>
             </div>
         </div>
-    <div class="footer">
-        <div class="round-thing-left">
+        <div class="footer">
+            <div class="round-thing-left">
+            </div>
+            <div class="sd-card">
+                <img src='./assets/sc card logo.png'>
+            </div>
+            <div id="clock">
+            </div>
+            <div class="round-thing-right">
+            </div>
         </div>
-        <div class="sd-card">
-            <img src='./assets/sc card logo.png'>
-        </div>
-        <div class="time">
-            Sat 23/02
-        </div>
-        <div class="round-thing-right">
-        </div>
-    </div>
 
     </div>
 </body>

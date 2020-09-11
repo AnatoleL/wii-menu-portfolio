@@ -17,17 +17,56 @@
 }
 
 .channel {
+    position: relative;
     overflow: hidden;
-    border: 4px #B4B4B4 solid;
     width: 387px;
     height: 213px;
     display: inline-block;
     margin: 5px 7px;
 }
 
+.channel-empty {
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 387px;
+    height: 213px;
+    display: inline-block;
+    margin: 5px 7px;
+}
+
+.channel-blur, .channel-blur-later, .channel-blur-sooner{
+    position: absolute;
+    top: 20px;
+    width: 98%; 
+    height: 10%;
+    background: rgba(255, 255, 255, 0.05);
+    animation: va-et-vien 3s alternate infinite ease-in-out;
+    animation-delay: 5s;
+}
+
+.channel-blur-sooner {
+    animation: va-et-vien 2s alternate infinite ease-in-out;
+    animation-delay: 1s;
+}
+
+.channel-blur-later {
+    animation: va-et-vien 5s alternate infinite ease-in-out;
+    animation-delay: 10s;
+}
+
+@keyframes va-et-vien {
+    0% {
+        top: 20px
+    }
+
+    100% {
+        top: 190px;
+    }
+}
 .channel-picture {
     width: 100%;
-    height: 100%
 }
 
 .channel-table {
@@ -64,8 +103,13 @@
     border-radius: 0 48% 48% 0;
 }
 
-.time {
-    display: none;
+#clock {
+    font-family: "wii"; 
+    color: #9b9b9b;
+    position: relative;
+    left: 780px;
+    top: 100px;
+    font-size: 120px;
 }
 
 .sd-card {
@@ -75,4 +119,9 @@
     height: 100px;
     width: 75px;
     box-shadow: 5px 15px 15px -3px rgba(93, 93, 93,0.7);
+}
+
+@font-face {
+    font-family: 'wii';
+    src: url("./assets/clock-font.ttf") format("truetype");
 }
